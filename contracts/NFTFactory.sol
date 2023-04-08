@@ -21,7 +21,12 @@ contract NFTFactory {
     function createNft(string memory name , string memory symbol) public returns (address   nftContract) {
         address clone = Clones.clone(implementationContract);
         NFT(clone).initialize(name, symbol);
+        Nft.add(clone);
         return clone;
+    }
+
+    function getNfts() public view returns(address[] memory nfts){
+        return Nft.values();
     }
 
 

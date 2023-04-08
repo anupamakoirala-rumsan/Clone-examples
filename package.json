@@ -1,9 +1,13 @@
 {
   "name": "hardhat-project",
   "dependencies": {
+    "@nomiclabs/hardhat-truffle5": "^2.0.7",
     "@openzeppelin/contracts": "^4.8.2",
     "@openzeppelin/contracts-upgradeable": "^4.8.2",
     "hardhat": "^2.13.0",
     "hardhat-gas-reporter": "^1.0.9"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-web3": "2.0.0"
   }
 }
